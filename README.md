@@ -15,13 +15,18 @@ El objetivo de esta práctica es hacer que un robot movil de 6 ruedas se mueva m
 * Lanzamos `robot_gazebo.launch.py` para poder ver tanto el mundo en gazebo con el robot como la informacion de dicho robot en rviz.
 * Tras comprobar que se lanzo correctamente el primer launcher lanzamos `rover_moveit_config move_group.launch.py`, con el que se lanza el nodo principal de MoveIt.
 * Una vez tengamos los dos apartados anteriores bien, se lanza el cotrolador del robot, al añadir este es cuando se observa correctamente el robot en rviz.
+* Lanzaremos antes de empezar a teleoperar un rosbag que capture todo lo que pase en los topicos: `/imu` y `/joint_states`.
 
-## Paso 2
+### Paso 2
 Con el paso anterior completado, podeos iniciar a teleoperar el robot, se introduce el siguiente comando en una terminal:
 ```bash
 ros2 run teleop_twist_keyboard teleop_twist_keyboard
 ```
 Al lanzar esto nos sale una zona en la que podemos teleoperar el robot mediante teclas del ordenador, asi como aumentar o disminuir la velocidad angular o lineal, teniendo esto movemos el robot hasta que el gripper quede justo encima de la caja. Debo añadir que en mi caso no es necesario planificar nada hasta este momento porque la posicion inicial de mi robot es con la pinza abierta y el brazo en alto.
 
-## Paso 3
+### Paso 3
 Una vez tenemos el robot en la posicion adecuada, comienza la planificación!!! Primero accederemos a la ventana de rviz que el launcher del gazebo nos abrio, seleccionamos en el apartado add la seccion que indica `MotionPlanning`, una vez abierta esta sección selecionamos en el contexto la opion `OMPL` y planificamos y ejecutamos todas las veces que sea necesario tanto el gripper como el brazo para hacer que la caja sea elevada del suelo y llevada al compartimento que le corresponde en la parte de atras del robot.
+
+### Paso 4
+Como hemos terminado lo que queriamos analizar, paramos el rosbag que lanzamos en el paso 1, y todos los demas launchers ya que no seran necesarios más, y procederemos a analizar los topicos. Para hacer esto lanzaremos en una terminal `plotjuggler` y cargaremos en el el rosbag, introduciremos lo que nos interesa de cada topic, pulsamos el botón `start` y veremos que aparece en la gráfica los datos de cada cosa que hemos añadido.
+
