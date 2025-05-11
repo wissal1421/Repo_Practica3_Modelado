@@ -30,3 +30,22 @@ Una vez tenemos el robot en la posicion adecuada, comienza la planificación!!! 
 ### Paso 4
 Como hemos terminado lo que queriamos analizar, paramos el rosbag que lanzamos en el paso 1, y todos los demas launchers ya que no seran necesarios más, y procederemos a analizar los topicos. Para hacer esto lanzaremos en una terminal `plotjuggler` y cargaremos en el el rosbag, introduciremos lo que nos interesa de cada topic, pulsamos el botón `start` y veremos que aparece en la gráfica los datos de cada cosa que hemos añadido.
 
+## Análisis de las gráficas
+### Gráfico Tiempo vs G-parcial (Esfuerzo por articulación del brazo)
+Este gráfico representa el esfuerzo (effort) aplicado por los motores de las articulaciones del brazo y la pinza durante todo el proceso. Se incluyen las articulaciones:
+* Brazo_l_1_link_joint
+* Brazo_l_2_link_joint
+* Brazo_l_3_link_joint
+* Base_pinza_link_joint
+
+Se puede observar: 
+* El incremento de esfuerzo entre los segundos 10 y 50 coincide con la bajada del brazo hacia la caja.
+
+* Entre los segundos 50 y 90 se observan picos bruscos, correspondientes al agarre y elevación de la caja, especialmente en Brazo_l_3_link_joint (eje prismatic).
+
+* A partir del segundo 100, el esfuerzo disminuye de forma estable, indicando la finalización de la operación y reposicionamiento del brazo.
+
+### Gráfico Tiempo vs Posición de cada una de las ruedas
+
+
+### Gráfico Tiempo vs Aceleración lineal (IMU)
