@@ -70,3 +70,6 @@ Se puede observar:
 * Las aceleraciones en x y y presentan variaciones notables durante el desplazamiento, con oscilaciones que reflejan pequeños ajustes de velocidad del robot.
 
 * En z, se observan perturbaciones más marcadas al momento de bajar y subir la pinza (entre segundos 40 y 100), probablemente causadas por la vibración inducida por los movimientos verticales del brazo.
+
+## Rosbag
+El enlace de acceso al rosbag es: https://drive.google.com/file/d/1ALmbGBdF-kuIzm3DKt0OS6O_rLjlzOBH/view?usp=sharing
