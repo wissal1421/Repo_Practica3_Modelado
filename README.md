@@ -38,6 +38,8 @@ Este gráfico representa el esfuerzo (effort) aplicado por los motores de las ar
 * Brazo_l_3_link_joint
 * Base_pinza_link_joint
 
+![Gráfico de esfuerzo](https://github.com/wissal1421/Repo_Practica3_Modelado/blob/78fd7797d6cdf2879b641041a613444d2578617e/grafico_gasto.png)
+
 Se puede observar: 
 * El incremento de esfuerzo entre los segundos 10 y 50 coincide con la bajada del brazo hacia la caja.
 
@@ -47,6 +49,8 @@ Se puede observar:
 
 ### Gráfico Tiempo vs Posición de cada una de las ruedas
 Este gráfico refleja el desplazamiento de las 6 ruedas (3 por cada lateral) a lo largo del tiempo, obtenidas del topic /joint_states.
+
+![Gráfico de posición](https://github.com/wissal1421/Repo_Practica3_Modelado/blob/78fd7797d6cdf2879b641041a613444d2578617e/grafico_pos_ruedas.png)
 
 Se puede observar:
 
@@ -58,6 +62,8 @@ Se puede observar:
 
 ### Gráfico Tiempo vs Aceleración lineal (IMU)
 Este gráfico muestra la aceleración lineal en los ejes X, Y y Z a partir del sensor IMU.
+
+![Gráfico de aceleración](https://github.com/wissal1421/Repo_Practica3_Modelado/blob/78fd7797d6cdf2879b641041a613444d2578617e/grafico_ac_ruedas.png)
 
 Se puede observar:
 
