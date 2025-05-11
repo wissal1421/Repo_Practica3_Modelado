@@ -57,3 +57,10 @@ Se puede observar:
 * La estabilización de las curvas a partir del segundo 60 refleja que el robot se detiene mientras el brazo realiza el pick and place.
 
 ### Gráfico Tiempo vs Aceleración lineal (IMU)
+Este gráfico muestra la aceleración lineal en los ejes X, Y y Z a partir del sensor IMU.
+
+Se puede observar:
+
+* Las aceleraciones en x y y presentan variaciones notables durante el desplazamiento, con oscilaciones que reflejan pequeños ajustes de velocidad del robot.
+
+* En z, se observan perturbaciones más marcadas al momento de bajar y subir la pinza (entre segundos 40 y 100), probablemente causadas por la vibración inducida por los movimientos verticales del brazo.
