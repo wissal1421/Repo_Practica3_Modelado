@@ -46,6 +46,14 @@ Se puede observar:
 * A partir del segundo 100, el esfuerzo disminuye de forma estable, indicando la finalización de la operación y reposicionamiento del brazo.
 
 ### Gráfico Tiempo vs Posición de cada una de las ruedas
+Este gráfico refleja el desplazamiento de las 6 ruedas (3 por cada lateral) a lo largo del tiempo, obtenidas del topic /joint_states.
 
+Se puede observar:
+
+* El movimiento comienza al inicio de la teleoperación (~segundo 0) y continúa hasta aproximadamente el segundo 60.
+
+* Se aprecia un incremento suave y sincronizado en las posiciones, lo que indica una conducción recta hacia el objetivo.
+
+* La estabilización de las curvas a partir del segundo 60 refleja que el robot se detiene mientras el brazo realiza el pick and place.
 
 ### Gráfico Tiempo vs Aceleración lineal (IMU)
