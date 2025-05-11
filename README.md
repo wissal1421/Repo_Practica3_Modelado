@@ -9,3 +9,9 @@ El objetivo de esta práctica es hacer que un robot movil de 6 ruedas se mueva m
 * Brazo tipo SCARA con 3 articulaciones y gripper de 4 dedos.
 
 * Sensores integrados: cámara frontal, cámara en gripper y sensor IMU en la base(esta justo en el ceentro del robot por lo que no puede visualizarse directamente).
+
+## Pasos para realizar la simulacion
+### Paso 1
+* Lanzamos ´ robot_gazebo.launch.py ´ para poder ver tanto el mundo en gazebo con el robot como la informacion de dicho robot en rviz.
+* Tras comprobar que se lanzo correctamente el primer launcher lanzamos ´rover_moveit_config move_group.launch.py´, con el que se lanza el nodo principal de MoveIt.
+* Una vez tengamos los dos apartados anteriores bien, se lanza el cotrolador del robot, al añadir este es cuando se observa correctamente el robot en rviz.
